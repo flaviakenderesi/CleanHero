@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water"
+    tools:context="com.example.android.cleanhero.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Charlie"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="46sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="6dp"
+                android:onClick="threePointsTeamA"
+                android:scaleType="centerInside"
+                android:src="@drawable/vacuum" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="6dp"
+                android:onClick="twoPointsTeamA"
+                android:scaleType="centerInside"
+                android:src="@drawable/dishwashing"
+                android:text="Dishwashing     (2)" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="6dp"
+                android:onClick="onePointTeamA"
+                android:scaleType="centerInside"
+                android:src="@drawable/washing"
+                android:text="Washing \n (1)" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Flavia"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="46sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="6dp"
+                android:onClick="threePointsTeamB"
+                android:scaleType="centerInside"
+                android:src="@drawable/vacuum" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="6dp"
+                android:onClick="twoPointsTeamB"
+                android:scaleType="centerInside"
+                android:src="@drawable/dishwashing" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="6dp"
+                android:onClick="onePointTeamB"
+                android:scaleType="centerInside"
+                android:src="@drawable/washing" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:onClick="resetAllScores"
+        android:text="reset" />
+
+
+</RelativeLayout>
